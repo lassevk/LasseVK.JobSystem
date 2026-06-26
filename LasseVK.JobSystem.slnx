@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="LasseVK.JobSystem.Core.Tests/LasseVK.JobSystem.Core.Tests.csproj" />
+  <Project Path="LasseVK.JobSystem.Core/LasseVK.JobSystem.Core.csproj" />
+</Solution>
