@@ -4,10 +4,11 @@ A class library for managing background jobs, complete with persistence, failure
 
 # For issues in this project
 
-Execute the following command, and follow the instructions to connect to the kanban-board:
+Issues are tracked as GitHub issues in the `lassevk/LasseVK.JobSystem` repository. Use the `gh` CLI to read, create, and update them, for example:
 
 ```
-plink instructions
+gh issue list
+gh issue view <number>
 ```
 
 # Rules and guidelines for development
