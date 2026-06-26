@@ -18,7 +18,7 @@ public interface IJobProcessor
 /// Processes job payloads of type <typeparamref name="T"/>.
 /// </summary>
 /// <typeparam name="T">The payload type handled by this processor.</typeparam>
-public interface IJobProcessor<T> : IJobProcessor where T : IJob
+public interface IJobProcessor<in T> : IJobProcessor where T : IJob
 {
     /// <summary>
     /// Executes the work for a single assignment. Returning normally marks the assignment as

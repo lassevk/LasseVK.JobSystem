@@ -14,5 +14,5 @@ public enum JobStatus
     Assigned,
 
     /// <summary>No processor was registered for the job type (terminal).</summary>
-    Unhandled
+    Unhandled,
 }

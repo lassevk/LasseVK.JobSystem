@@ -62,12 +62,7 @@ public sealed class InMemoryJobStore : IJobStore
     {
         lock (_gate)
         {
-            if (!_jobs.TryGetValue(jobId, out JobRecord? job))
-            {
-                return Task.FromResult(false);
-            }
-
-            if (job.Status != JobStatus.Pending || job.LeaseOwner != leaseOwner)
+            if (!_jobs.TryGetValue(jobId, out JobRecord? job) || job.Status != JobStatus.Pending || job.LeaseOwner != leaseOwner)
             {
                 return Task.FromResult(false);
             }
